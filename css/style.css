@@ -1,0 +1,88 @@
+/* ------------------ COLORS ----------------- */
+/* ------------------ CSS RESET ----------------- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 93.75%;
+}
+
+body {
+  font-family: "Lexend Deca", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+body .bg-pattern-top {
+  position: absolute;
+  top: -40%;
+  left: -2.5%;
+}
+body .bg-pattern-bottom {
+  position: absolute;
+  top: 50%;
+  right: 0%;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+/* ------------------ CSS RESET ----------------- */
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 42rem;
+}
+.grid-container .card-container-sedans {
+  background-color: hsl(31deg, 77%, 52%);
+}
+.grid-container .card-container-suvs {
+  background-color: hsl(184deg, 100%, 22%);
+}
+.grid-container .card-container-luxury {
+  background-color: hsl(179deg, 100%, 13%);
+}
+
+.card-title {
+  font-family: "Big Shoulders Display", cursive;
+}
+
+/* ------------------ FOOTER ----------------- */
+.attribution {
+  margin-top: 3rem;
+  font-size: 0.8rem;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228deg, 45%, 44%);
+}/*# sourceMappingURL=style.css.map */
