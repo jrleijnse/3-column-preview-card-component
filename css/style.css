@@ -16,6 +16,7 @@ html {
 }
 
 body {
+  background-color: hsl(0deg, 0%, 95%);
   font-family: "Lexend Deca", sans-serif;
   min-height: 100vh;
   display: flex;
@@ -36,13 +37,11 @@ body .bg-pattern-bottom {
   right: 0%;
 }
 
-img,
 picture,
 video,
 canvas,
 svg {
   display: block;
-  max-width: 100%;
 }
 
 input,
@@ -61,25 +60,79 @@ select {
 .grid-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  width: 42rem;
+  width: 60rem;
 }
 .grid-container .card-container-sedans {
   background-color: hsl(31deg, 77%, 52%);
+  padding: 3rem;
+  border-radius: 0.6rem 0rem 0rem 0.6rem;
+}
+.grid-container .card-container-sedans .btn {
+  color: hsl(31deg, 77%, 52%);
+}
+.grid-container .card-container-sedans .btn:hover {
+  color: hsla(0deg, 0%, 100%, 0.75);
+  background-color: hsl(31deg, 77%, 52%);
+  outline: 2px solid hsla(0deg, 0%, 100%, 0.75);
+  outline-offset: -2px;
 }
 .grid-container .card-container-suvs {
   background-color: hsl(184deg, 100%, 22%);
+  padding: 3rem;
+}
+.grid-container .card-container-suvs .btn {
+  color: hsl(184deg, 100%, 22%);
+}
+.grid-container .card-container-suvs .btn:hover {
+  color: hsla(0deg, 0%, 100%, 0.75);
+  background-color: hsl(184deg, 100%, 22%);
+  outline: 2px solid hsla(0deg, 0%, 100%, 0.75);
+  outline-offset: -2px;
 }
 .grid-container .card-container-luxury {
   background-color: hsl(179deg, 100%, 13%);
+  padding: 3rem;
+  border-radius: 0rem 0.6 rem 0.6rem 0rem;
+}
+.grid-container .card-container-luxury .btn {
+  color: hsl(179deg, 100%, 13%);
+}
+.grid-container .card-container-luxury .btn:hover {
+  color: hsla(0deg, 0%, 100%, 0.75);
+  background-color: hsl(179deg, 100%, 13%);
+  outline: 2px solid hsla(0deg, 0%, 100%, 0.75);
+  outline-offset: -2px;
+}
+
+.card-icon {
+  margin-bottom: 1.4rem;
 }
 
 .card-title {
   font-family: "Big Shoulders Display", cursive;
+  font-size: 2.65rem;
+  color: hsl(0deg, 0%, 95%);
+  line-height: 1.2;
+  margin-bottom: 1.4rem;
+  text-transform: uppercase;
+}
+
+.card-text {
+  color: hsla(0deg, 0%, 100%, 0.75);
+  margin-bottom: 5.2rem;
+}
+
+.btn {
+  border: none;
+  cursor: pointer;
+  background-color: hsl(0deg, 0%, 95%);
+  padding: 0.6rem 1.8rem;
+  border-radius: 2rem;
 }
 
 /* ------------------ FOOTER ----------------- */
 .attribution {
-  margin-top: 3rem;
+  margin-top: 2rem;
   font-size: 0.8rem;
   text-align: center;
 }

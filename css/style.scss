@@ -29,7 +29,7 @@ html {
 }
 
 body {
-  // background-color: $dark-cyan;
+  background-color: $very-light-gray;
   font-family: "Lexend Deca", sans-serif;
   min-height: 100vh;
   display: flex;
@@ -52,13 +52,11 @@ body {
   }
 }
 
-img,
 picture,
 video,
 canvas,
 svg {
   display: block;
-  max-width: 100%;
 }
 
 input,
@@ -78,27 +76,85 @@ select {
 .grid-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  width: 42rem;
+  width: 60rem;
 
   .card-container-sedans {
     background-color: $bright-orange;
+    padding: 3rem;
+    border-radius: 0.6rem 0rem 0rem 0.6rem;
+
+    .btn {
+      color: $bright-orange;
+    }
+
+    .btn:hover {
+      color: $transparent-white;
+      background-color: $bright-orange;
+      outline: 2px solid $transparent-white;
+      outline-offset: -2px;
+    }
   }
   .card-container-suvs {
     background-color: $dark-cyan;
+    padding: 3rem;
+
+    .btn {
+      color: $dark-cyan;
+    }
+    .btn:hover {
+      color: $transparent-white;
+      background-color: $dark-cyan;
+      outline: 2px solid $transparent-white;
+      outline-offset: -2px;
+    }
   }
   .card-container-luxury {
     background-color: $very-dark-cyan;
+    padding: 3rem;
+    border-radius: 0rem 0.6 rem 0.6rem 0rem;
+
+    .btn {
+      color: $very-dark-cyan;
+    }
+
+    .btn:hover {
+      color: $transparent-white;
+      background-color: $very-dark-cyan;
+      outline: 2px solid $transparent-white;
+      outline-offset: -2px;
+    }
   }
+}
+.card-icon {
+  margin-bottom: 1.4rem;
 }
 
 .card-title {
   font-family: "Big Shoulders Display", cursive;
+  font-size: 2.65rem;
+  color: $very-light-gray;
+  line-height: 1.2;
+  margin-bottom: 1.4rem;
+  text-transform: uppercase;
+}
+
+.card-text {
+  color: $transparent-white;
+  margin-bottom: 5.2rem;
+}
+
+.btn {
+  border: none;
+  cursor: pointer;
+  background-color: $very-light-gray;
+  padding: 0.6rem 1.8rem;
+  border-radius: 2rem;
 }
 
 /* ------------------ FOOTER ----------------- */
 
 .attribution {
-  margin-top: 3rem;
+  margin-top: 2rem;
   font-size: 0.8rem;
   text-align: center;
 
