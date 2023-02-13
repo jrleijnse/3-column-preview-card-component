@@ -74,7 +74,6 @@ select {
 /* ------------------ CSS RESET ----------------- */
 
 .grid-container {
-  position: relative;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   width: 60rem;
@@ -155,11 +154,9 @@ select {
 /* ------------------ FOOTER ----------------- */
 
 .attribution {
-  position: absolute;
   margin-top: 1.5rem;
   font-size: 0.8rem;
   text-align: center;
-  top: 74%;
 
   a {
     color: hsl(228, 45%, 44%);
