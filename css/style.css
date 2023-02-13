@@ -92,7 +92,7 @@ select {
 .grid-container .card-container-luxury {
   background-color: hsl(179deg, 100%, 13%);
   padding: 3rem;
-  border-radius: 0rem 0.6 rem 0.6rem 0rem;
+  border-radius: 0rem 0.6rem 0.6rem 0rem;
 }
 .grid-container .card-container-luxury .btn {
   color: hsl(179deg, 100%, 13%);
